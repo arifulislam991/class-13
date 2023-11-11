@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.section-1{
+    background: url(img/p8.jpg) ;
+    padding: 350px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.section-1 h1 span{
+    font-size: 55px;
+    font-style: italic;
+    color: rgb(189, 189, 25);
+}
+.section-1 a{
+    color: aliceblue;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.section-1 a:hover{
+    border-color: rgb(191, 191, 10);
+    color: rgb(186, 186, 23);
+    border-radius: 10px;
+}
+.section-2{
+    width: 250px;
+    height: 250px;
+    background:linear-gradient(45deg,rgb(104, 17, 17),rgb(37, 37, 161),rgb(107, 107, 10));
+    margin: 100px auto;
+    transition: 1s;
+    
+}
+.section-2:hover{
+    box-shadow:0 0 35px rgb(26, 7, 44);
+
+}

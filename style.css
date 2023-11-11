@@ -46,9 +46,47 @@ h1{
     background:linear-gradient(45deg,rgb(104, 17, 17),rgb(37, 37, 161),rgb(107, 107, 10));
     margin: 100px auto;
     transition: 1s;
+    transform: skewX(-20deg);
     
 }
 .section-2:hover{
     box-shadow:0 0 35px rgb(26, 7, 44);
+
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: 100%;
+    transition: 1s;
+}
+.section-3{
+    width: 250px;
+    height: 250px;
+    margin: 100px auto;
+    background-color: black;
+
+}
+.section-3:hover img{
+    /* transform: rotateY(180deg);guraro */
+    transform: scale(5);
+    /* transform: translate();upor and nise */
+
+}
+.box{
+    width: 600px;
+    height: 350px;
+    background-color: rgb(10, 100, 70);
+    margin: 100px auto;
+    position: relative;
+}
+.inner-box{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(196, 41, 13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50% ,-50%);
 
 }

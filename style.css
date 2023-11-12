@@ -64,12 +64,29 @@ img{
     height: 250px;
     margin: 100px auto;
     background-color: black;
+    position: relative; 
+    overflow: hidden; 
 
 }
+.section-3::before{
+    content:'' ;
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8;
+    opacity: 0.9;
+}
+.section-3:hover::before{
+    left: 100%;
+}
 .section-3:hover img{
-    /* transform: rotateY(180deg);guraro */
-    transform: scale(5);
-    /* transform: translate();upor and nise */
+    /* transform: rotateY(180deg);gurano  */
+     /* transform: scale(5); */
+    /* transform: translate();upor and nise  */
 
 }
 .box{
@@ -88,5 +105,29 @@ img{
     left: 50%;
     border-radius: 50%;
     transform: translate(-50% ,-50%);
-
 }
+.bd{
+    width:275px;
+    background-color: aqua;
+    margin:100px auto;
+    padding: 40px 25px;
+    color: #fff;
+    position: relative;
+}
+/* .bd::after{
+    content: 'good morning';
+} */
+/* .bd::before{
+    content: 'good morning';
+}  */
+.bd::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 45px;
+    transform: rotate(45deg);
+} 
